@@ -22,11 +22,10 @@
     "engine-requirements.js"
   ],
   "scripts": {
-    "build:all": "tsc",
     "build:tsc": "tsc",
     "gen:protobuf": "sh WAProto/GenerateStatics.sh",
-    "lint": "eslint src --ext .js,.ts,.jsx,.tsx",
-    "lint:fix": "eslint src --fix --ext .js,.ts,.jsx,.tsx",
+    "lint": "eslint lib --ext .js,.ts,.jsx,.tsx",
+    "lint:fix": "eslint lib --fix --ext .js,.ts,.jsx,.tsx",
     "prepack": "tsc",
     "prepare": "tsc",
     "preinstall": "node ./engine-requirements.js"
